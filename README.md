@@ -9,7 +9,7 @@ A transparent overlay shows your fingertip positions in real time.
 - Left-click by pressing your pinky finger down.
 - Drag (grab) by pressing and holding your middle finger down.
 - Right-click by pressing your ring finger down.
-- Terminate the program by pressing all 5 fingers down.
+- Terminate the program using the Rock and Roll gesture.
 - Visual overlay displays fingertip positions and gesture status.
 
 *Note: For best results, keep your fingers straight and only bend them when you want to perform a gesture.*
@@ -38,7 +38,7 @@ A transparent overlay shows your fingertip positions in real time.
    ```sh
    python Hand_gesture_mouse_control.py
    ```
-   or just run the script in your IDE.
+   Or just run the script in your IDE.
 6. **A preview window will open** showing your webcam feed. A transparent overlay will appear on your desktop showing colored dots for your fingertips.
 
 ## Gestures
@@ -46,13 +46,13 @@ A transparent overlay shows your fingertip positions in real time.
 - **Left Click:** Tap your pinky finger down.
 - **Drag/Grab:** Hold your middle finger down to grab (hold left mouse button).
 - **Right Click:** Tap your ring finger down.
-- **Terminate:** Press all 5 fingers down.
+- **Terminate:** Using the Rock and Roll gesture.
 - **To quit:** Press `ESC` or `q` in the preview window or press all 5 fingers down.
 
 ## Troubleshooting
 - If you see an error about missing modules, install them with pip as shown above.
-- If the overlay does not appear, ensure PyQt5 is installed and your system supports transparent windows.
-- If the camera is not detected, check your webcam connection and CAMERA_INDEX setting in the script.
+- If the overlay does not appear, please make sure PyQt5 is installed and your system supports transparent windows.
+- If the camera isn't detected, could you check your webcam connection and CAMERA_INDEX setting in the script?
 
 ## Customization
 - Adjust sensitivity and smoothing by changing the `SMOOTH_ALPHA` constant in the script.
@@ -62,9 +62,3 @@ A transparent overlay shows your fingertip positions in real time.
 ---
 
 Edit the constants in the script to tweak behaviour as needed. 
-
-Terminate the program by making the "rock and roll" gesture: index and pinky strongly up (extended), middle and ring strongly down (curled).
-
-**Terminate:** Make the "rock and roll" gesture: index and pinky strongly up (extended), middle and ring strongly down (curled).
-
-**To quit:** Press `ESC` or `q` in the preview window or make the "rock and roll" gesture (index and pinky strongly up, middle and ring strongly down). 
