@@ -1,5 +1,4 @@
 # Hand_Gesture_BSC12
-# Hand-Gesture Mouse for Windows with Fingertip Overlay
 
 This program turns your hand into a mouse using your webcam. 
 It tracks your hand and fingertips, allowing you to control the mouse cursor and perform clicks with simple finger gestures. 
