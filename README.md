@@ -63,8 +63,8 @@ A transparent overlay shows your fingertip positions in real time.
 
 Edit the constants in the script to tweak behaviour as needed. 
 
-Terminate the program by making the "rock and roll" gesture (index and pinky up, middle and ring down).
+Terminate the program by making the "rock and roll" gesture: index and pinky strongly up (extended), middle and ring strongly down (curled).
 
-**Terminate:** Make the "rock and roll" gesture (index and pinky up, middle and ring down).
+**Terminate:** Make the "rock and roll" gesture: index and pinky strongly up (extended), middle and ring strongly down (curled).
 
-**To quit:** Press `ESC` or `q` in the preview window or make the "rock and roll" gesture (index and pinky up, middle and ring down). 
+**To quit:** Press `ESC` or `q` in the preview window or make the "rock and roll" gesture (index and pinky strongly up, middle and ring strongly down). 
