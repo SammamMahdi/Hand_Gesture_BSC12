@@ -229,10 +229,18 @@ def capture_loop():
             pinky_down = pinky_tip.y > pinky_pip.y
             index_down = index_tip.y > lm[6].y  # index pip is 6
 
-            # Terminate if all four fingers are down (single trigger per gesture)
-            if index_down and middle_down and ring_down and pinky_down:
+            # For termination: require strict rock and roll gesture
+            CURL_THRESHOLD = 0.04  # adjust as needed
+            STRONG_UP_THRESHOLD = 0.04
+            index_strong_up = index_tip.y < lm[6].y - STRONG_UP_THRESHOLD
+            pinky_strong_up = pinky_tip.y < pinky_pip.y - STRONG_UP_THRESHOLD
+            middle_strong_down = middle_tip.y > middle_pip.y + CURL_THRESHOLD
+            ring_strong_down = ring_tip.y > ring_pip.y + CURL_THRESHOLD
+
+            # Terminate only if strict rock and roll gesture is detected
+            if index_strong_up and pinky_strong_up and middle_strong_down and ring_strong_down:
                 if not all_fingers_were_down:
-                    print("All fingers down detected. Exiting...")
+                    print("Rock and roll gesture detected. Exiting...")
                     cap.release()
                     cv2.destroyAllWindows()
                     os._exit(0)
