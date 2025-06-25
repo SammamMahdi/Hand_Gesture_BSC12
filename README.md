@@ -36,7 +36,7 @@ A transparent overlay shows your fingertip positions in real time.
 ## Usage
 5. **Run the script** with:
    ```sh
-   python Another_implementation.py
+   python Hand_gesture_mouse_control.py
    ```
    or just run the script in your IDE.
 6. **A preview window will open** showing your webcam feed. A transparent overlay will appear on your desktop showing colored dots for your fingertips.
